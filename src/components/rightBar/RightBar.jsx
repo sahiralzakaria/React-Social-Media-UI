@@ -100,6 +100,36 @@ const RightBar = () => {
             <span>1 minute ago</span>
           </div>
         </div>
+        <div className="item">
+          <span>Online Friends</span>
+          <div className="user">
+            <div className="userInfo online">
+              <img src={personImg} alt="" />
+              <div className="status">
+
+              </div>
+              <span>Ahmed Ali</span>
+            </div>
+          </div>
+          <div className="user">
+            <div className="userInfo offline">
+              <img src={personImg} alt="" />
+              <div className="status">
+
+              </div>
+              <span>Ahmed Ali</span>
+            </div>
+          </div>
+          <div className="user">
+            <div className="userInfo online">
+              <img src={personImg} alt="" />
+              <div className="status">
+
+              </div>
+              <span>Ahmed Ali</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
