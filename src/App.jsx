@@ -18,8 +18,8 @@ const Layout = () => {
       <Navbar />
       <div style={{ display: "flex" }}>
         <LeftBar />
+        <div style={{ flex: 6 }}><Outlet /></div>
 
-        <Outlet />
 
         <RightBar />
       </div>
