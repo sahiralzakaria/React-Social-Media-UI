@@ -7,14 +7,14 @@ import Profile from './pages/profile/Profile';
 import Home from './pages/home/Home';
 import Register from './pages/register/Register'
 import { Route, Routes, Outlet, Navigate } from "react-router-dom";
-
+import './style.scss'
 
 const currentUser = true;
 
 const Layout = () => {
 
   return (
-    <div>
+    <div className='theme-dark'>
       <Navbar />
       <div style={{ display: "flex" }}>
         <LeftBar />
