@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 import { AuthContext } from "./authContext";
+import personImg from '../assets/person.jpg';
 
 export const AuthProvider = ({ children }) => {
-    // eslint-disable-next-line no-unused-vars
     const [currentUser, setCurrenUser] = useState(
-        JSON.parser(localStorage.getItem('user') || null
+        JSON.parse(localStorage.getItem('user') || null
         ));
 
     const login = () => {
-        // TO DO
+        setCurrenUser({ id: 1, name: 'sahir', profilePicture: personImg })
     }
 
     useEffect(() => {

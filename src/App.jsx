@@ -10,8 +10,9 @@ import { Route, Routes, Outlet, Navigate } from "react-router-dom";
 import './style.scss'
 import { useContext } from 'react';
 import { DarkModeContext } from './context/darkModeContext';
+import { AuthContext } from './context/authContext';
 
-const currentUser = true;
+
 
 const Layout = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -29,6 +30,7 @@ const Layout = () => {
 }
 
 const ProtectedRoute = ({ children }) => {
+  const currentUser = useContext(AuthContext);
   if (!currentUser) {
     return <Navigate to='/login' />
   }
