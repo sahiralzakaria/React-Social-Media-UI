@@ -8,6 +8,8 @@ import Home from './pages/home/Home';
 import Register from './pages/register/Register'
 import { Route, Routes, Outlet, Navigate } from "react-router-dom";
 import './style.scss'
+import { useContext } from 'react';
+import { DarkModeContext } from './context/darkModeContext';
 
 const currentUser = true;
 
@@ -35,7 +37,8 @@ const ProtectedRoute = ({ children }) => {
 }
 
 function App() {
-
+  const { darkMode } = useContext(DarkModeContext);
+  console.log(darkMode)
 
   return (
     <Routes>
