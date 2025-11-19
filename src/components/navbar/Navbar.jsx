@@ -14,7 +14,7 @@ import { DarkModeContext } from '../../context/darkModeContext';
 
 
 const Navbar = () => {
-    const { toggle } = useContext(DarkModeContext);
+    const { toggle, darkMode } = useContext(DarkModeContext);
     return (
         <div className='navbar'>
             <div className="left">
@@ -23,7 +23,7 @@ const Navbar = () => {
 
                 </Link>
                 <HomeOutlinedIcon />
-                <DarkModeOutlinedIcon onClick={toggle} />
+                {darkMode ? <WbSunnyOutlinedIcon onClick={toggle} /> : < DarkModeOutlinedIcon onClick={toggle} />}
                 <GridViewOutlinedIcon />
                 <div className="search">
                     <SearchOutlinedIcon />
