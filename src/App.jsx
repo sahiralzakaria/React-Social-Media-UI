@@ -14,14 +14,13 @@ import { DarkModeContext } from './context/darkModeContext';
 const currentUser = true;
 
 const Layout = () => {
-
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className='theme-dark'>
+    <div className={`theme-${darkMode ? 'dark' : 'light'}`}>
       <Navbar />
       <div style={{ display: "flex" }}>
         <LeftBar />
         <div style={{ flex: 6 }}><Outlet /></div>
-
 
         <RightBar />
       </div>

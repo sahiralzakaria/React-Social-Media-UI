@@ -3,7 +3,7 @@ import { DarkModeContext } from "./darkModeContext";
 
 export const DarkModeProvider = ({ children }) => {
     const [darkMode, setDarkMode] = useState(
-        localStorage.getItem("darkMode") === "true"
+        JSON.parse(localStorage.getItem("darkMode") || false)
     );
 
     const toggle = () => {
