@@ -1,6 +1,4 @@
-@import '../../style.scss';
-
-
+@use "../../style.scss" as *;
 
 
 .leftBar {
@@ -19,6 +17,7 @@
 
         .container {
             padding: 20px;
+
 
             hr {
                 margin: 20px 0px;
