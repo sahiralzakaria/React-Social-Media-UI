@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { AuthContext } from "./authContext";
-import personImg from '../assets/person.jpg';
+import personImg from '../assets/person3.png';
 
 export const AuthProvider = ({ children }) => {
     const [currentUser, setCurrenUser] = useState(
