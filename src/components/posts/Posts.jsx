@@ -15,7 +15,7 @@ const Posts = () => {
         {
             id: 2,
             name: "Jane Doe",
-            userId: 1,
+            userId: 2,
             profilePic: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
             desc: "Tenetur iste voluptates dolorem rem commodi voluptate pariatur, voluptatum, laboriosam consequatur"
         },
