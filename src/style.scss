@@ -18,7 +18,6 @@ $themes: (
     ),
 );
 
-// تحديث themify للطرق الحديثة
 @mixin themify($themes) {
     @each $theme, $map in $themes {
         .theme-#{$theme} & {
@@ -40,7 +39,12 @@ $themes: (
 }
 }
 
-// تحديث themed للطرق الحديثة
 @function themed($key) {
     @return map.get($theme-map, $key);
+}
+
+@mixin mobile {
+    @media (max-width:480px) {
+        @content;
+    }
 }
