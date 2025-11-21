@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
         ));
 
     const login = () => {
-        setCurrenUser({ id: 1, name: 'sahir', profilePicture: personImg })
+        setCurrenUser({ id: 1, name: 'Ahmed Ali', profilePicture: personImg })
     }
 
     useEffect(() => {
